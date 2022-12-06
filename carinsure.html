@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Preview Before Upload</title>
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+		
+		<h1 class="instruct">Please Upload an Image of your Annual Vehicle Insurance and/or Registration, Or an Image of Your Annual Homeowners Insurance</h1>
+		<br><br>
+        <figure class="image-container">
+            <img id="chosen-image">
+            <figcaption id="file-name"></figcaption>
+        </figure>
+
+        <input type="file" id="upload-button" accept="image/*">
+        <label for="upload-button">
+            <i class="fas fa-upload"></i> &nbsp; Choose A Photo
+        </label>
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>

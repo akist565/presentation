@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		
+		@import 'https://fonts.googleapis.com/css?family=Lora:400,700';
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+		@media screen and (min-width: 150rem) {
+
+}
+		body{    
+			margin-top:-5%;
+			display:flex; background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+}
+			
+			
+		/*RIBBON ABOVE FORM*/
+		.ribbon-wrapper {
+  position: relative;
+  z-index: 1;
+			box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+			width:75.25%;
+}
+
+h1.post-title {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.ribbon {
+	letter-spacing:0.08em;
+ 	 font-size: 20px!important;
+  	text-transform: uppercase;
+ 	 width: 175%;
+	  position: relative;
+	  background: #f35b5b;
+ 	 color: #fff;
+ 		 text-align: center;
+ 		 padding: 1em 2em;
+		  margin: -2.5em 3em 3.5em -5.7em;
+	}
+		.ribbon-inner{font-family:'Lato', sans-serif;
+		letter-spacing:1%; font-weight:bolder;}
+		.ribbon-innerTwo{font-family:'Lora', sans-serif;
+		letter-spacing:1.5%; font-weight: bolder;}
+		
+.ribbon:after,
+.ribbon:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #d74545;
+  z-index: -1
+}
+
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent
+}
+
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent
+}
+
+.ribbon .ribbon-inner:after,
+.ribbon .ribbon-inner:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #b23232 transparent transparent;
+  bottom: -1em
+}
+
+.ribbon .ribbon-inner:before {
+  left: 0;
+  border-width: 1em 0 0 1em
+}
+
+.ribbon .ribbon-inner:after {
+  right: 0;
+  border-width: 1em 1em 0 0
+}
+		
+		/*END RIBBON ABOVE FORM*/
+		/*FORM STYLING*/
+		.formWrap{
+			box-shadow: rgba(0, 0, 0, 0.3) 0px 31px 50px, rgba(0, 0, 0, 0.22) 0px 20px 18px;
+			width:25%;
+			border-style:solid; border-color:black; border-width:.1em;
+						margin-left:35%;	padding:5%;
+		background-image: linear-gradient(to right, #434343 0%, black 100%); 
+	 margin-top:5.5%;}
+				
+				.labelWrap{text-align: center;			}
+				.labelP{font-family: 'Lato', sans-serif; color:white; letter-spacing:0.1em;	}
+		
+		
+		.innerHead{ font-family: 'Lora', sans-serif; color:gold; letter-spacing:0.2em; font-weight:bolder; }
+		.innerHeadTwo{ font-family: 'Lato', sans-serif; color:goldenrod; letter-spacing:0.1em; font-weight:lighter;}
+		.innerHeadThree{font-family: 'Lora', sans-serif; color: gold; letter-spacing:0.2em; font-weight: lighter;}
+		
+		
+		/*SUBMIT BUTTON STYLING */
+		.submitBtn{color:white;
+		background-image: linear-gradient(to right, #ff9966, #ff5e62);
+		width:150px; display:block; text-align:center; margin-left:33%;
+		margin-top:7.5%; padding:35px; font-family: 'Lato', sans-serif; font-weight:1000; letter-spacing:0.25em; font-size:88.5%; border-radius:2.5em;
+		}	
+		
+		
+		/*END FORM STYLING*/
+	</style>
+	
+	
+
+<meta charset="utf-8">
+<title>AlterationRequestForm</title>
+</head>
+
+<body>
+	<!--THE FORM ITSELF !-->
+	<div class="formWrap">
+		<div class="ribbon-wrapper">
+  <h3 class="ribbon">
+<strong class="ribbon-inner">Fountain Pointe</strong>
+	  <br><br>
+	  <srong class="ribbon-innerTwo">ALTERATION REQUEST FORM</srong>
+</h3>
+</div>
+  <form action="https://formsubmit.co/b32cfed99a8f81f1c81860e876ea15e0"
+  method="POST"
+  enctype="multipart/form-data"
+>
+	  <div class="labelWrap">
+  <label>
+	  <p class="labelP">Homeowner's First Name:</p>
+    <input type="text" name="First Name">
+  </label>
+  <label>
+    <p class="labelP">Homeowner's Last Name:</p>
+	  <input type="text" name="Last Name">
+		</label>
+	  <label>
+		  <p class="labelP">Unit Number:</p>
+		  <input type="number" name="Unit Number">
+		</label>
+		<label>
+			<p class="labelP">Telephone Number:</p>
+		<input type="number" name="Phone Number">
+		</label>
+		  <br><br><br>
+		  <p class="innerHead">DETAILED DESCRIPTION OF PROPOSED ALTERATION:</p>
+		  	<p class="innerHeadTwo">(Please include size, color, and type of material. Attach an image or sketch photo if necessary):</p>
+		  <button type="submit" class="submitBtn">Upload Image</button>
+		<label>
+			<p class="labelP">Please Describe The Proposed Alteration In Detail:</p>
+    <input type="text" name="problem">
+
+  </label>
+		  	<p class="innerHeadThree">PLEASE NOTE: NO WORK IS TO COMMENCE WITHOUT WRITTEN APPROVAL FROM THE BOARD AND ALL NECESSARY PERMITS FROM THE CITY OF PHILA.</p>
+		  <label>
+			<p class="labelP">Date</p>
+    <input type="text" name="date">
+
+  </label>
+		  
+		
+  <button type="submit" class="submitBtn">SUBMIT</button>
+		  </div>
+</form>
+	</div>
+	<!--END OF THE FORM ITSELF !-->
+</body>
+	<!--EMAILS THE FORM !-->
+	<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+	
+</html>
